@@ -38,7 +38,7 @@ gem 'react_on_rails', '8.0.3'
 # Issue with gem on rails 5.1.2 ruby 2.4.1 so constrain to "0.9.8"
 gem "rb-fsevent", "0.9.8"
 
-gem 'devise'
+gem 'devise', '4.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
