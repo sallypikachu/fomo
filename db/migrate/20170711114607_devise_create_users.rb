@@ -19,6 +19,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
       t.inet     :current_sign_in_ip
       t.inet     :last_sign_in_ip
 
+      ## Omniauth
+      t.string :provider
+      t.string :uid
+
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
