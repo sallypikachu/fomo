@@ -1,0 +1,15 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">FOMO</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <% if current_user %>
+          <li><%= image_tag(current_user.image, class: 'align-inline') %><a href="#" class='align-inline'><%= current_user.name %></a></li>
+          <li><%= link_to "Sign out", "#" %></li>
+        <% else %>
+          <li><%= link_to "Sign in", "#" %></li>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</nav>
