@@ -1,5 +1,14 @@
-<ul>
+<!-- <ul>
   <% @events.each do |event|  %>
-    <li><%= event %></li>
+    <li><%= event.pretty_inspect %></li>
   <% end %>
+</ul> -->
+<% @events.each do |event| %>
+<h2><%= event['name'] %></h2>
+<p><%= event['description'] %></p>
+<ul>
+  <li><%= event['start_time'] %></li>
+  <li><%= event['end_time'] %></li>
+  <li><%= event['place'] %></li>
 </ul>
+<% end %>
